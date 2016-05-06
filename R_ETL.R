@@ -1,7 +1,7 @@
 #iImporting Data from CSV
 bike = read.csv("bikeshare.csv", sep = ",", header = TRUE)
 #variable path
-file_path <- "E:/PACKT/B04662/Ch1/Data"
+file_path <- "E:/Data"
 file_name <- "bikeshare.csv"
 bike <- read.csv(paste(file_path, file_name, sep="/"))
 
@@ -62,7 +62,7 @@ bike %>%
 
 
 #Export the Data
-write.table(bike, "E:\\PACKT\\B04662\\Ch1\\Data\\bikeshare_exp_tab.txt", sep="\t")
+write.table(bike, "E:\bikeshare_exp_tab.txt", sep="\t")
 write.csv(bike, file = "bikeshare_csv_exp.csv")
 
 #SQLite
